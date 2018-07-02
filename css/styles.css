@@ -402,5 +402,7 @@ nav h1 a {
     font-size: 2rem;
     padding-top: 4rem;
   }
-
+  .inside #map {
+    position: fixed;
+  }
 }

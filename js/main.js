@@ -1,4 +1,4 @@
-let restaurants,
+-et restaurants,
   neighborhoods,
   cuisines
 var newMap
