@@ -284,3 +284,24 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+@media (min-width:350px) {
+  nav {
+    height: 10vh;
+}
+  nav h1 a {
+    font-size: 2.5rem;
+  }
+  #map {
+    height: 80vh;
+}
+.filter-options {
+  height: 10vh;
+}
+.leaflet-touch .leaflet-bar a {
+  width: 100px;
+  height: 100px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+}
