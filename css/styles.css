@@ -351,5 +351,14 @@ nav h1 a {
    min-width: 80%;
   }
 
+
+
 }
+/*
+position: fixed;
+z-index: 100;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0; */
 
