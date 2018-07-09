@@ -352,7 +352,7 @@ nav h1 a {
   }
 }
 
-@media (min-width:310px) {
+@media (min-width:320px) {
   nav h1 a {
     font-size: 3em;
   }

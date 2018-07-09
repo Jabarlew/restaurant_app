@@ -71,6 +71,7 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
 /**
  * Initialize leaflet map, called from HTML.
  */
+
 initMap = () => {
   self.newMap = L.map('map', {
         center: [40.722216, -73.987501],
@@ -78,7 +79,7 @@ initMap = () => {
         scrollWheelZoom: false
       });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
-    mapboxToken: '<pk.eyJ1IjoiamFiYXJsZXciLCJhIjoiY2ppem1neW5zMDhucDNrcWQ0YmNhcWtiNyJ9.f9wckpk4cRLvysy1FDd1PQ>',
+    mapboxToken: 'pk.eyJ1IjoiamFiYXJsZXciLCJhIjoiY2ppem1neW5zMDhucDNrcWQ0YmNhcWtiNyJ9.f9wckpk4cRLvysy1FDd1PQ',
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
