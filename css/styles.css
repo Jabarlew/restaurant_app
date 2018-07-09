@@ -346,53 +346,15 @@ nav h1 a {
   color: #666;
 }
 
-@media (min-width:150px) {
-  #restaurants-list li {
-    min-width: 80%;
-  }
-}
-
 @media (min-width:320px) {
-  nav h1 a {
-    font-size: 3em;
-  }
-  .leaflet-touch .leaflet-control-layers,
-  .leaflet-touch .leaflet-bar {
-    margin: 20px;
-  }
-  .leaflet-touch .leaflet-bar a {
-    width: 120px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5em;
-  }
-  .filter-options {
-    display: flex;
-    flex-direction: row;
-  }
-  .filter-options h2 {
-    font-size: 4.5em;
-  }
-  .filter-options select {
-    font-size: 4em;
-    height: 70%;
-  }
-  #restaurants-list li a {
-    height: 80px;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-  }
-  #footer {
-    height: 120px;
-    font-size: 3em;
-    padding: 40px;
-  }
   .inside #map {
     position: relative;
+    height:100%;
   }
+  .inside #map-container {
+    height: 50vh;
+    position: relative;
+    width: 100%;
+  }
+
 }
