@@ -67,6 +67,7 @@ section {
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+
 }
 
 #footer {
@@ -97,7 +98,7 @@ nav h1 {
 
 nav h1 a {
   color: #fff;
-  font-size: 14pt;
+  font-size: 3rem;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -107,7 +108,7 @@ nav h1 a {
   padding: 10px 40px 16px;
   list-style: none;
   background-color: #eee;
-  font-size: 17px;
+  font-size: 2rem;
   margin: 0;
   width: calc(50% - 80px);
 }
@@ -347,14 +348,29 @@ nav h1 a {
 }
 
 @media (min-width:320px) {
+  nav h1 a {
+    font-size: 3.5rem;
+  }
   .inside #map {
     position: relative;
-    height:100%;
   }
   .inside #map-container {
     height: 50vh;
-    position: relative;
+    position: sticky;
     width: 100%;
-  }
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
+  }
+  #restaurant-container,
+  #reviews-container {
+    width: 100%;
+    position: relative;
+  }
+  #restaurant-name {
+    font-size: 5em;
+  }
 }
