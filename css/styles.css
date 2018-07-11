@@ -448,4 +448,7 @@ nav h1 a {
   #reviews-list p:nth-child(4) {
     font-size: .8rem;
   }
+  .inside #map-container {
+    z-index: 0;
+  }
 }
