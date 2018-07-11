@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-
+* {
+  box-sizing: border-box;
+}
 body,
 td,
 th,
@@ -162,6 +164,10 @@ nav h1 a {
   align-items: center;
 }
 
+#restaurant-container, #reviews-container {
+  box-sizing: border-box;
+ }
+
 .filter-options h2 {
   color: white;
   font-size: 1rem;
@@ -258,6 +264,7 @@ nav h1 a {
   right: 0;
   top: 80px;
   width: 50%;
+  top: 12vh;
 }
 
 .inside #map {
@@ -360,6 +367,7 @@ nav h1 a {
   .inside #map-container {
     height: 50vh;
     position: sticky;
+    top: 12vh;
     width: 100%;
     z-index: 1;
   }
