@@ -363,6 +363,11 @@ nav h1 a {
   nav h1 a {
     font-size: 1.2rem;
   }
+
+  .filter-options {
+    flex-direction: column;
+    padding: 1rem;
+  }
   .inside #map {
     position: relative;
   }
@@ -422,6 +427,8 @@ nav h1 a {
   nav h1 a {
     font-size: 1.5rem;
   }
+
+
 
   #restaurant-container, #reviews-container {
     padding-top: 200px;
