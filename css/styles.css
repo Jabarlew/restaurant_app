@@ -67,7 +67,6 @@ section {
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
-
 }
 
 #footer {
@@ -349,7 +348,7 @@ nav h1 a {
 
 @media (min-width:320px) {
   nav h1 a {
-    font-size: 3.5rem;
+    font-size: 1.2rem;
   }
   .inside #map {
     position: relative;
@@ -363,7 +362,6 @@ nav h1 a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
   }
   #restaurant-container,
   #reviews-container {
@@ -372,5 +370,27 @@ nav h1 a {
   }
   #restaurant-name {
     font-size: 5em;
+  }
+  .inside #footer {
+    width: 100%;
+    height: 5vh;
+    font-size: 2rem;
+  }
+  #restaurant-hours td {
+    font-size: 2.2rem;
+  }
+  #reviews-list li p:first-child {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  #reviews-list li p:nth-child(2) {
+    font-size: 1.3rem;
+  }
+  #reviews-list li p:nth-child(3) {
+    font-size: 1.1rem;
+    color: red;
+  }
+  #reviews-list li p:nth-child(4) {
+    font-size: 1rem;
   }
 }
