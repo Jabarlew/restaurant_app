@@ -24,6 +24,10 @@ li {
   color: #333;
 }
 
+ul {
+  padding: 0;
+}
+
 a {
   color: orange;
   text-decoration: none;
@@ -358,10 +362,6 @@ nav h1 a {
     position: sticky;
     width: 100%;
     z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
   #restaurant-container,
   #reviews-container {
@@ -376,6 +376,9 @@ nav h1 a {
   }
   #reviews-container h2 {
     font-size: 1.3rem;
+  }
+  #reviews-container {
+    padding: 30px 0px 80px;
   }
   .inside #footer {
     width: 100%;
