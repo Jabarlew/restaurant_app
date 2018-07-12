@@ -160,7 +160,7 @@ nav h1 a {
 
 .filter-options {
   width: 100%;
-  height: 8vh;
+  /* height: 8vh; */
   background-color: #3397DB;
   display: flex;
   align-items: center;
@@ -359,7 +359,7 @@ nav h1 a {
   color: #666;
 }
 
-@media (max-width:800px) {
+@media (max-width:1024px) {
   nav h1 a {
     font-size: 1.2rem;
   }
@@ -423,7 +423,7 @@ nav h1 a {
     font-size: .8rem;
   }
 }
-@media (min-width:801px) {
+@media (min-width:1025px) {
   nav h1 a {
     font-size: 1.5rem;
   }
@@ -432,6 +432,7 @@ nav h1 a {
 
   #restaurant-container, #reviews-container {
     padding-top: 200px;
+    z-index: 1;
   }
 
   #restaurant-hours td {
