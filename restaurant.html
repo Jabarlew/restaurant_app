@@ -14,19 +14,19 @@
   <title>Restaurant Info</title>
 </head>
 
-<body class="inside">
+<body class="inside" tabindex="-1">
   <!-- Beginning header -->
-  <header>
+  <header aria-label="header" tabindex="0">
     <!-- Beginning nav -->
-    <nav>
+    <nav role="navigation" aria-label="Restaurant">
       <h1>
-        <a href="/">Restaurant Reviews</a>
+        <a href="/" aria-label="restaurant review">Restaurant Reviews</a>
       </h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb">
+    <ul id="breadcrumb" role="listbox" tabindex="0">
       <li>
-        <a href="/">Home</a>
+        <a href="/" role="option" aria-label="home">Home</a>
       </li>
     </ul>
     <!-- End breadcrumb -->
@@ -35,23 +35,23 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent">
+  <main id="maincontent" role ="main" tabindex="-1">
     <!-- Beginning map -->
-    <section id="map-container">
+    <section id="map-container" role="geomap" tabindex="-1">
       <div id="map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+    <section id="restaurant-container" aria-describedby="neighborhoods selection" role="table" tabindex="0">
+      <h2 id="restaurant-name" aria-label ="restaurant name" role="columnheader"></h1>
+        <img id="restaurant-img" aria-label ="restaurant images" role="columnheader">
+        <p id="restaurant-cuisine" aria-label ="restaurant cuisine" role="columnheader"></p>
+        <p id="restaurant-address" aria-label ="restaurant address" role="columnheader"></p>
+        <table id="restaurant-hours" aria-label="restaurant hours" role="table"></table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section id="reviews-container">
+    <section id="reviews-container" aria-label="restaurant reviews" tabindex="0">
       <ul id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
@@ -59,7 +59,7 @@
   <!-- End main -->
 
   <!-- Beginning footer -->
-  <footer id="footer">
+  <footer id="footer" role ="contentinfo" tabindex="-1">
     Copyright (c) 2017
     <a href="/">
       <strong>Restaurant Reviews</strong>
