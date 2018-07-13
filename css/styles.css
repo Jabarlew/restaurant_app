@@ -204,6 +204,7 @@ nav h1 a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 #restaurants-list li {
@@ -368,7 +369,7 @@ nav h1 a {
 
 #skip {
   position: absolute;
-  left: 100%;
+  left: 999px;
 }
 
 #skip:focus {
@@ -465,3 +466,4 @@ nav h1 a {
       z-index: 0;
     }
   }
+}
