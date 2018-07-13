@@ -1,6 +1,6 @@
-//thanks a lot for help from youtube tutorial https://www.youtube.com/watch?v=BfL3pprhnms&t=246s
+// thanks a lot for help from youtube tutorial https://www.youtube.com/watch?v=BfL3pprhnms&t=246s
 
-let cacheName = 'ver1';
+let cacheName = 'ver1337';
 let cacheFiles = [
   '/',
   'index.html',

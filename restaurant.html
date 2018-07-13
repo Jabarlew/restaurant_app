@@ -15,6 +15,7 @@
 </head>
 
 <body class="inside" tabindex="-1">
+  <a tabindex="1" id="skip" class="skip-link screen-reader-text" href="#restaurant-container">Skip to main content</a>
   <!-- Beginning header -->
   <header aria-label="header" tabindex="0">
     <!-- Beginning nav -->
@@ -35,7 +36,7 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent" role ="main" tabindex="-1">
+  <main id="maincontent" role="main" tabindex="-1">
     <!-- Beginning map -->
     <section id="map-container" role="geomap" tabindex="-1">
       <div id="map"></div>
@@ -43,10 +44,11 @@
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container" aria-describedby="neighborhoods selection" role="table" tabindex="0">
-      <h2 id="restaurant-name" aria-label ="restaurant name" role="columnheader"></h1>
-        <img id="restaurant-img" aria-label ="restaurant images" role="columnheader">
-        <p id="restaurant-cuisine" aria-label ="restaurant cuisine" role="columnheader"></p>
-        <p id="restaurant-address" aria-label ="restaurant address" role="columnheader"></p>
+      <h2 id="restaurant-name" aria-label="restaurant name" role="columnheader">
+        </h1>
+        <img id="restaurant-img" aria-label="restaurant images" role="columnheader">
+        <p id="restaurant-cuisine" aria-label="restaurant cuisine" role="columnheader"></p>
+        <p id="restaurant-address" aria-label="restaurant address" role="columnheader"></p>
         <table id="restaurant-hours" aria-label="restaurant hours" role="table"></table>
     </section>
     <!-- end restaurant -->
@@ -59,7 +61,7 @@
   <!-- End main -->
 
   <!-- Beginning footer -->
-  <footer id="footer" role ="contentinfo" tabindex="-1">
+  <footer id="footer" role="contentinfo" tabindex="-1">
     Copyright (c) 2017
     <a href="/">
       <strong>Restaurant Reviews</strong>

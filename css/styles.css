@@ -1,10 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 body,
 td,
 th,
@@ -166,9 +168,10 @@ nav h1 a {
   align-items: center;
 }
 
-#restaurant-container, #reviews-container {
+#restaurant-container,
+#reviews-container {
   box-sizing: border-box;
- }
+}
 
 .filter-options h2 {
   color: white;
@@ -204,13 +207,17 @@ nav h1 a {
 }
 
 #restaurants-list li {
+  list-style: none;
+  display: inline-block;
+  max-width: calc(100% - 30px);
+  text-align: center;
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial, sans-serif;
   margin: 15px;
   padding: 0 30px 25px;
   text-align: left;
-  min-width: 270px;
+  width: 270px;
 }
 
 #restaurants-list .restaurant-img {
@@ -359,11 +366,19 @@ nav h1 a {
   color: #666;
 }
 
+#skip {
+  position: absolute;
+  left: 100%;
+}
+
+#skip:focus {
+  left: 5px;
+}
+
 @media (max-width:1024px) {
   nav h1 a {
     font-size: 1.2rem;
   }
-
   .filter-options {
     flex-direction: column;
     padding: 1rem;
@@ -409,54 +424,44 @@ nav h1 a {
     margin-top: .3rem;
     font-weight: bold;
   }
-  #reviews-list p:nth-child(2){
+  #reviews-list p:nth-child(2) {
     font-size: 1rem;
-
   }
   #reviews-list p:nth-child(3) {
     font-size: 1rem;
     color: red;
-
   }
-
   #reviews-list p:nth-child(4) {
     font-size: .8rem;
   }
-}
-@media (min-width:1025px) {
-  nav h1 a {
-    font-size: 1.5rem;
+  @media (min-width:1025px) {
+    nav h1 a {
+      font-size: 1.5rem;
+    }
+    #restaurant-container,
+    #reviews-container {
+      padding-top: 200px;
+      z-index: 1;
+    }
+    #restaurant-hours td {
+      font-size: 1rem;
+    }
+    #reviews-list p:nth-child(1) {
+      font-size: 1rem;
+      margin-top: .3rem;
+      font-weight: bold;
+    }
+    #reviews-list p:nth-child(2) {
+      font-size: 1rem;
+    }
+    #reviews-list p:nth-child(3) {
+      font-size: 1rem;
+      color: red;
+    }
+    #reviews-list p:nth-child(4) {
+      font-size: .8rem;
+    }
+    .inside #map-container {
+      z-index: 0;
+    }
   }
-
-
-
-  #restaurant-container, #reviews-container {
-    padding-top: 200px;
-    z-index: 1;
-  }
-
-  #restaurant-hours td {
-    font-size: 1rem;
-  }
-  #reviews-list p:nth-child(1) {
-    font-size: 1rem;
-    margin-top: .3rem;
-    font-weight: bold;
-  }
-  #reviews-list p:nth-child(2){
-    font-size: 1rem;
-
-  }
-  #reviews-list p:nth-child(3) {
-    font-size: 1rem;
-    color: red;
-
-  }
-
-  #reviews-list p:nth-child(4) {
-    font-size: .8rem;
-  }
-  .inside #map-container {
-    z-index: 0;
-  }
-}

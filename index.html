@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <a  tabindex="1" id="skip" class="skip-link screen-reader-text" href="#skiplink">Skip to main content</a>
   <header aria-label="header" role="banner">
     <nav role="navigation" aria-label="navigation">
       <h1 role="logo" aria-label="Restaurant Reviews">
@@ -26,7 +27,7 @@
       <div id="map"></div>
     </section>
     <section aria-label="neighborhoods-select">
-      <div class="filter-options" role="listbox">
+      <div id="skiplink" class="filter-options" role="listbox">
         <h2 aria-label="Filter Results">Filter Results</h2>
         <select aria-describedby="neighborhoods" id="neighborhoods-select" name="neighborhoods" role="option" tabindex="0"  onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
